@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import NavBar from "./components/NavBar/NavBar.jsx";
-import Home from "./components/Home/Home";
-import OurMission from "./components/OurMission/OurMission";
-import WeWorkWith from "./components/WeWorkWith/WeWorkWith";
-import AboutUs from "./components/AboutUs/AboutUs";
-import Faq from "./components/FAQ/Faq";
-import BookASession from "./components/BookASession/BookASession";
+import NavBar from "./Components/Navbar/NavBar"
+import Home from "./Components/Home/Home";
+import OurMission from "./Components/OurMission/OurMission";
+import WeWorkWith from "./Components/WeWorkWith/WeWorkWith";
+import AboutUs from "./Components/AboutUs/AboutUs";
+import Faq from "./Components/FAQ/Faq";
+import BookASession from "./Components/BookASession/BookASession";
 
 import FontContext from './FontContext';
 import { useContext, useEffect } from 'react';
@@ -21,7 +21,7 @@ useEffect(() => {
   const className = font === 'defaultFont' ? 'defaultFont' : 'greekFont';
   document.body.className = className;
 }, [font]);
-
+// testing
 
   return (
     <Router>
