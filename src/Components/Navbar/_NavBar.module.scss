@@ -1,0 +1,153 @@
+@import "src/_colors.scss";
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+
+  background-color: rgba(102, 102, 102, 0.404);
+  color: $main-color;
+  font-family: "Libre Baskerville", sans-serif !important;
+}
+
+.logo {
+  margin: 0;
+  height: 4em;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a {
+    margin: 0 2rem;
+    color: $main-color;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+  
+    // Define the pseudo-element
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px; 
+      height: 2px;
+      width: 0; 
+      background-color: $main-color-button; 
+      transform-origin: right;
+      transition: width 0.3s ease;
+    }
+  
+    // Animate the pseudo-element on hover
+    &:hover::before {
+      width: 100%;
+    }
+    
+    &:hover {
+      color: $main-color-button;
+    }
+  }
+
+header .navBtn {
+  padding: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: $main-color;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  header .navBtn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: $color-black;
+    transition: 1s;
+    transform: translateY(-100vh);
+  }
+
+  header .responsive_nav {
+    transform: none;
+  }
+
+  nav .navCloseBtn {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+
+  nav a {
+    font-size: 1.5;
+  }
+}
+
+
+
+.languageBtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    font-size: 1rem;
+    align-items: flex-end;
+    
+  }
+
+  .containerboth {
+    // background-color: red;
+    display: flex;
+    justify-content: space-around;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  }
+
+  .langbtnimg {
+    width: 3rem;
+    height: 3rem;
+    transition: all .2s ease;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+     user-select: none; 
+     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: scale(1);
+    }
+  }
+
+  @media (min-width: 820px) and (max-width: 1180px) {
+    nav a {
+      width: 70px;
+      font-size: 14px;
+      display: flex;
+      text-align: center;
+
+    }
+
+    
+  }

@@ -1,0 +1,131 @@
+@import "src/_colors.scss";
+
+// .defaultFont {
+//   font-family: "Libre Baskerville", sans-serif;
+  
+// }
+
+// .greekFont {
+//   // font-family: 'Ubuntu Condensed', sans-serif;
+
+// }
+
+.section2 {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  background-color: $main-color;
+
+  &__container1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__imgcontainer {
+      position: relative;
+      width: 50%;
+      height: 90%;
+      border-radius: 200px 20px 200px 20px;
+
+      @media (max-width: 767px) {
+        width: 90%;  
+      }
+
+      &__img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 200px 20px 200px 20px;
+        
+        box-shadow: 10px 10px 49px -11px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 49px -11px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 49px -11px rgba(0, 0, 0, 0.75);
+
+        
+      }
+    }
+  }
+  &__container2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10% 0 10%;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+    }
+
+    button {
+      margin-top: 2rem;
+      width: 50%;
+      height: 50px;
+      border: none;
+      border-radius: 10px;
+      background-color: $main-color-button ;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      color:black;
+      border: 0.5px solid black;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+
+      &:hover {
+        background-color: $main-color-button2;
+        transform: scale(1.1);
+      }
+
+      &:active {
+        
+        transform: scale(1);
+      }
+
+      @media (max-width: 767px) {
+        width: 90%;  
+      }
+    }
+    //Mobile
+    @media (max-width: 767px) {
+      
+
+      &{
+        width: 100%;
+      }
+
+      h1{
+        font-size: 1.5rem;
+        
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+    //Tablet
+    @media (min-width: 768px) and (max-width: 1023px){
+
+      &{
+        width: 70%;
+      }
+
+      h1{
+        font-size: 2rem;
+        
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+}

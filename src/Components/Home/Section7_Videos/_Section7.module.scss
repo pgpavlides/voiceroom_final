@@ -1,0 +1,53 @@
+@import "src/_colors.scss";
+
+.section7 {
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+
+  background-color: $main-color;
+  padding: 0 10%;
+
+  .video-row {
+    display: flex;
+   flex-direction: column;
+   gap: 2em;
+   
+
+    iframe {
+      
+      width: 500px;
+      height: 340px;
+      border: none;
+      border-radius: 10px;
+      background-color: $main-color-button;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      color: black;
+      border: 0.5px solid black;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+
+      video {
+        width: 90%;
+        margin-bottom: 1rem;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      video {
+        width: 70%;
+      }
+    }
+  }
+}
