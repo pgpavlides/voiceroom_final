@@ -11,7 +11,7 @@ const translations = {
     p2: 'That is why we founded the Voice Room.',
     p3: 'In the Voice Room we are looking to develop informed voice users, with efficient and healthy habits. ',
     p4: 'We are advocates of the body, mind and voice connection and we teach evidence based vocal technique. ',
-    p5: 'That means that we bring science together with performance (and enjoyment)'
+    p5: 'We bring together science with performance and enjoyment.'
     
   },
   gr: {

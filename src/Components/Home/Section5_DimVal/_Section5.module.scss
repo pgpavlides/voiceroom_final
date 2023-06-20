@@ -38,6 +38,8 @@
     border-radius: 100%;
     background-color: $main-color-button;
     font-size: 30px;
+
+    
   }
 
   @media only screen and (max-width: 767px) {
@@ -48,8 +50,21 @@
   @media only screen and (max-width: 1180px) and (max-height: 820px) {
     width: 350px;
 
+    &__s1,
+    &__s2,
+    &__s3,
+    &__s4 {
+
+      width: 2em;
+      height: 2em;
+      font-size: 1.6em;
+
+  }
+
     //  background-color: red;
   }
+
+
 }
 
 .middlesection {
@@ -99,5 +114,8 @@
 }
 
 .wavepano {
+  display: block;
+}
+.wavepano2 {
   display: block;
 }

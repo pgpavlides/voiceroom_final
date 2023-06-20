@@ -92,7 +92,7 @@ function Section6() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % 16); // Increase slide number every 7 seconds, loop back to 0 after 16
-    }, 7000);
+    }, 9200);
     return () => clearInterval(interval);
   }, []);
 

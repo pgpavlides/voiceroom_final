@@ -56,7 +56,7 @@ function Section5(props) {
   return (
     <>
       <img
-        className={styles.wavepano}
+        className={styles.wavepano2}
         src="/imgs/wave_quote_pano.svg"
         alt="Example SVG"
         style={{ width: "100%", display: "block" }}
@@ -66,7 +66,7 @@ function Section5(props) {
           title={translations[language].name1}
           subtitle={translations[language].title1}
           imageUrl="imgs/dim.jpg"
-          buttonText="Click me"
+          buttonText="Learn More"
           onButtonClick={handleButtonClickDim}
         />
         <div className={styles.middlesection}>
@@ -92,7 +92,7 @@ function Section5(props) {
           title={translations[language].name2}
           subtitle={translations[language].title2}
           imageUrl="imgs/val.jpg"
-          buttonText="Click me"
+          buttonText="Learn More"
           onButtonClick={handleButtonClickVal}
         />
         

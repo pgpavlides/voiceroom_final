@@ -3,7 +3,7 @@
   const translations = {
   en: {
     name1: 'Singers',
-    text1: 'Singers who want to develop efficient technique and appropriate stylistic choices, refining their repertoire, getting career advice or healing through singing.',
+    text1: 'Singers who want to develop or maintain efficient technique and appropriate stylistic choices, refining their repertoire, getting career advice or healing through singing.',
     name2: 'Actors',
     text2: 'Actors who want to work on new text and deliver with vocal freedom, connection and convincing storytelling, and prepare for upcoming auditions.',
     name3: 'Speakers',
