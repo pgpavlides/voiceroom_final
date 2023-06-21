@@ -1,7 +1,7 @@
 import { useContext, useRef, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import styles from "./_NavBar.module.scss";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import LanguageContext from "../../LanguageContext";
 import FontContext from "../../FontContext";
 
@@ -27,11 +27,18 @@ function NavBar() {
     changeFont(newLanguage === "en" ? "defaultFont" : "greekFont");
   };
 
+  const handleClick = () => {
+    navigate("/"); 
+  };
+
+  const navigate = useNavigate();
+  
+
   
 
   return (
     <header className={styles.header}>
-      <img className={styles.logo} src="imgs/logo.png" alt="" />
+      <img className={styles.logo} src="imgs/logo.png" alt="" onClick={handleClick} />
       <nav className={`${styles.nav} ${isNavOpen ? styles.responsive_nav : ""}`} ref={navRef}>
         <Link onClick={showNavBar} className={styles.navLinkHome} to="/">Home</Link>
         <Link onClick={showNavBar} className={styles.navLinkOurMission} to="/our-mission">Our Mission</Link>

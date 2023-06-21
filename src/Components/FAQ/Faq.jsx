@@ -108,8 +108,44 @@ const Faq = () => {
   } else {
     return (
       <div>
-        <h1>FAQ</h1>
-        <p>This is my first React component.</p>
+        
+        
+        
+
+        <Container fluid className={styles.about_sectionc1}>
+      
+      
+        
+
+        <Container fluid className={styles.about_sectionc1__text}>
+        
+        <h1 className={styles.faqtitle}>FAQs</h1>
+        <h3>{translations[language].q1}</h3>
+        <p>{translations[language].a1}</p>
+        <h3>{translations[language].q2}</h3>
+        <p>{translations[language].a2}</p>
+        <h3>{translations[language].q3}</h3>
+        <p>{translations[language].a3}</p>
+        <h3>{translations[language].q4}</h3>
+        <p>{translations[language].a4}</p>
+        <h3>{translations[language].q5}</h3>
+        <p>{translations[language].a5}</p>
+        <h3>{translations[language].q6}</h3>
+        <p>{translations[language].a6}</p>
+
+
+
+
+        
+      
+
+        </Container>
+      </Container>
+
+
+
+
+      
       </div>
     );
   }
