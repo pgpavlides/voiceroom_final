@@ -18,7 +18,7 @@ const translations = {
     q1: 'Why do I need a coach?',
     a1: 'A coach can guide you through a customised and skill-based approach that is ultimately much more enjoyable and sustainable for the music learner. They can also help you develop your voice to achieve consistent, healthy, and sustainable vocal habits. A coach can hold you accountable and encourage you to celebrate the achievement of goals, help you deal with vocal issues, and fill the missing pieces in your vocal knowledge. Essentially, the right voice coach will help you shine bright without burning out your voice.',
     q2: 'Why choose us?',
-    a2: 'We have 15 years of professional singing experience and 10 years of teaching experience at prestigious organizations in the UK. We understand the needs of our learners and use a combination of learn physiological, kinaesthetic, and visual approaches. We are committed to incorporating the latest research in voice science within our professional practice. We can help you find answers and get results through tools and strategies that actually work without wasting time, effort, and money.',
+    a2: 'We have over a decade of professional singing and teaching experience at prestigious organizations in the UK. We understand the needs of our learners and use a combination of physiological, kinaesthetic, and visual approaches. We are committed to incorporating the latest research in voice science within our professional practice. We can help you find answers and get results through tools and strategies that actually work without wasting time, effort, and money.',
     q3: 'I would like to give it a try, but aren’t singing lessons expensive?',
     a3: 'Do you want to have a trial lesson without the high costs? It is important to feel safe and comfortable with the singing teacher you choose and that you feel that your money and time goes in good use. Therefore, offer the option of a trial lesson where we can get to know each other, discuss your goals and access your needs. Book your first 45-minute trial lesson for only £30 (offer valid until 1st September 2023)',
     q4: 'Do you have any group workshops available?',
@@ -26,7 +26,7 @@ const translations = {
     q5: 'Are you organising this for your colleagues?',
     a5: 'Contact us with your needs and we will make sure we will design the most efficient session for you and your company.',
     q6: 'What type of sessions do you offer?',
-    a6: 'We offer in-person and remote sessions. Our Voice Studio facilities are located in Thessaloniki, Greece. Can’t make it into the studio? No worries- we have got you covered with online sessions.',
+    a6: 'We offer in-person and remote sessions. Our Voice Studio facilities are located in Thessaloniki, Greece. Can’t make it into the studio? No worries we`ve got you covered - with online sessions.',
 
    
   },
